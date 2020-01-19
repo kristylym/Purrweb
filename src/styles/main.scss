@@ -5,7 +5,30 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
-@import "./swiper.min.css";
+@import "./swiper.min";
+
+// swipe config style
+.swiper-container {
+    height: 460px;
+    width: 900px;
+    position: unset;
+
+}
+
+.slider-container {
+    position: relative;
+}
+
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        padding: 0px;
+        border-radius: 0;
+        margin: 10px!important;
+        &.swiper-pagination-bullet-active {
+            background: black!important;
+        }
+    }
+}
 
 @font-face {
     font-family: 'Proxima Nova Bold';          
@@ -16,13 +39,6 @@
     font-family: 'Proxima Nova Regular';          
     src: url('../fonts/ProximaNova-Regular.woff');
   }
-
-$light-color:  #fff;
-$phon-color:  #5f49cf;
-$mark-color:  #ff8b00;
-$extra-phon-color: #f8f8f8;
-$text-color: #878787;
-
 
 h1, h2, h3, h4, p {
     padding: 0;
@@ -61,7 +77,7 @@ body {
     align-items: center;
     max-width: 1150px;
     margin: 0 auto;
-    padding: 33px 20px 178px;
+    padding: 33px 20px 16px;
     @media(max-width:920px){
         flex-direction: column;
         padding: 53px 20px 78px;
@@ -146,6 +162,17 @@ body {
         color: $phon-color;
         margin-top: 11px;
         margin-bottom: 65px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            right: -30px;
+            top: -10px;
+            width: 30px;
+            height: 30px;
+            border-top: 12px solid $mark-color;
+            border-right: 12px solid $mark-color;
+        }
     }
     &-cont {
         width: 900px;
