@@ -1,5 +1,5 @@
 import "./import/modules";
-import Swiper from "./import/swiper.min";
+let Swiper = require('./import/swiper.min.js')
 let swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     pagination: {
