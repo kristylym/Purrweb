@@ -475,24 +475,29 @@ body {
     }
     &-content {
         width: 660px;
-        height: 415px;
         position: relative;
         margin: 10% auto;
-        @media(max-width:650px) {
-            height: 550px;
-            width: 270px;
+        @media(max-width:700px) {
+            max-width: 100%;
         }
         &__close {
             background: url(../img/close.png);
             color: #FFFFFF;
             position: absolute;
-            right: -29px;
+            right: -1%;
             text-align: center;
-            top: -30px;
+            top: -7%;
             width: 32px;
             height: 32px;
             text-decoration: none;
             font-weight: bold;
+        }
+        &__video {
+            width: 100%;
+            
+            @media(max-width:700px) {
+                width: 100%;
+            }
         }
         
     }
@@ -691,6 +696,7 @@ body {
 .twitter-tweet {
     margin-top: 0;
 }
+
 .text-desc {
     text-align: center;
     background-color: #252525;
