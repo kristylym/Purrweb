@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <script src="https://kit.fontawesome.com/c7ee97b8d0.js" crossorigin="anonymous"></script>
     </head>
     <body>
         
@@ -16,19 +15,19 @@
                 <div class="header">
                     <a href="" class="header__logo"></a>
                     <ul class="header-list">
-                        <li class="header-list__item active"><a href="" class="header-list__link">Home</a></li>
-                        <li class="header-list__item"><a href="" class="header-list__link">Products</a></li>
-                        <li class="header-list__item"><a href="" class="header-list__link">Services</a></li>
-                        <li class="header-list__item"><a href="" class="header-list__link">Resources</a></li>
-                        <li class="header-list__item"><a href="" class="header-list__link">About</a></li>
-                        <li class="header-list__item"><a href="" class="header-list__link">CONTACT US</a></li>
+                        <li class="header-list__item active"><a href="#Home" class="header-list__link">Home</a></li>
+                        <li class="header-list__item"><a href="#Products" class="header-list__link">Products</a></li>
+                        <li class="header-list__item"><a href="#Services" class="header-list__link">Services</a></li>
+                        <li class="header-list__item"><a href="#Resources" class="header-list__link">Resources</a></li>
+                        <li class="header-list__item"><a href="#About" class="header-list__link">About</a></li>
+                        <li class="header-list__item"><a href="#CONTACT US" class="header-list__link">CONTACT US</a></li>
                     </ul>
                 </div>
             </header>
-            <!-- Swiper -->
             <div class="slider-container">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
+                        <a name="Products"></a>
                     <div class="swiper-slide">
                         <div class="swiper-item">
                             <div class="swiper-item__title">Device Authentication</div>
@@ -37,34 +36,59 @@
                             <div class="swiper-item__btn">GET STARTED</div>
                         </div>
                         <div class="swiper-item">
-                            <img src="../img/twitt.png)" alt="">
+                            <div class="swiper-item__img"><img src="../img/twitt.png" alt=""></div>
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">
+                        <div class="swiper-item">
+                            <div class="swiper-item__title">Device Authentication</div>
+                            <div class="swiper-item__desc">SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. <br>
+                            Discover the possibilities with SALT.</div>
+                            <div class="swiper-item__btn">GET STARTED</div>
+                        </div>
+                        <div class="swiper-item">
+                            <div class="swiper-item__img"><img src="../img/twitt.png" alt=""></div>
+                        </div>
                     </div>
-                    <!-- Add Pagination -->
+                    <div class="swiper-slide">
+                        <div class="swiper-item">
+                            <div class="swiper-item__title">Device Authentication</div>
+                            <div class="swiper-item__desc">SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. <br>
+                            Discover the possibilities with SALT.</div>
+                            <div class="swiper-item__btn">GET STARTED</div>
+                        </div>
+                        <div class="swiper-item swiper-item__img">
+                            <img src="../img/twitt.png" alt="">
+                        </div>
+                    </div>
+                    </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
+            <div class="find">
+                <div class="find-title">Find out more</div>
+               <div class="find-img"><a href="#Resources"><img src="../img/find.png" alt=""></a></div>
+            </div>
         </div>
         <div class="wrap">
+            <a name="Services"></a>
             <div class="info">
-                <div class="info__item">
-                    <div class="info__number">126,300</div>
-                    <div class="info__desc">Identity Theft Cases Reported in&nbsp;Australia</div>
+                <div class="info-item">
+                    <div class="info-item__number">126,300</div>
+                    <div class="info-item__desc">Identity Theft Cases Reported in&nbsp;Australia</div>
                 </div>
-                <div class="info__item">
-                    <div class="info__number">$20.1bn</div>
-                    <div class="info__desc">Online Transactions per annum&nbsp;by&nbsp;Australians</div>
+                <div class="info-item">
+                    <div class="info-item__number">$20.1bn</div>
+                    <div class="info-item__desc">Online Transactions per annum&nbsp;by&nbsp;Australians</div>
                 </div>
-                <div class="info__item">
-                    <div class="info__number">45,511</div>
-                    <div class="info__desc">Online Fraud Cases Reported in&nbsp;Australia</div>
+                <div class="info-item">
+                    <div class="info-item__number">45,511</div>
+                    <div class="info-item__desc">Online Fraud Cases Reported in&nbsp;Australia</div>
                 </div>
             </div>
         </div>
         <div class="wrap wrap_gray">
+            <a name="Resources"></a>
             <div class="about">
                 <div class="about-title">What We Do</div>
                 <div class="about-cont">
@@ -122,7 +146,8 @@
                 </div>
             </div>
         </div>
-        <div class="wrap">
+        <div class="wrap wrap_product">
+            <a name="About"></a>
             <div class="product">
                 <div class="product-item">
                     <div class="product-item__title">Product Spotlight</div>
@@ -130,7 +155,8 @@
                     <a href="#" class="product-item__btn">more info</a>
                 </div>
                 <div class="product-item">
-                    <a href="#open-modal" class=""><img class="" src="../img/video_img.png" alt=""></a>
+                    <div class="">
+                    <a href="#open-modal" class=""><img class="product-item__img" src="../img/video_img.png" alt=""></a>
                     <div id="open-modal" class="modal">
                         <div class="modal-content">
                             <a href="#close" title="Закрыть" class="modal-content__close"></a>
@@ -139,20 +165,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <a href="#open-modal" ><div class="product-item__img"></div></a>
-                    <div id="open-modal" class="modal">
-                        <div class="modal-content">
-                            <a href="#close" title="Закрыть" class="modal-content__close"></a>
-                            <div class=""></div>
-                        </div>
-                    </div> -->
-                    
-                    <!-- <iframe id="ytplayer" type="text/html" data-src="https://www.youtube.com/embed/EePTirAs6Ig?autoplay=1&rel=0" frameborder="0" allowfullscreen autoplay="1"></iframe> -->
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/5_ARibfCMhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                </div>
                 </div>
             </div>
         </div>
             <div class="start">
+                <a name="CONTACT US"></a>
                 <div class="start-img"></div>
                 <div class="start-bg"></div>
                 <div class="start-content">
@@ -164,11 +182,8 @@
             <footer class="footer">
                 <div class="footer-item footer-item-twitter">
                     <div class="footer-item__twitter">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Salt Group opens UK subsidiary and appoints UK industry leader as CEO <br><br>More - <a href="https://t.co/glOfQeDK8J">https://t.co/glOfQeDK8J</a></p>&mdash; Salt Group (@saltgroup) <a href="https://twitter.com/saltgroup/status/1172422941289508868?ref_src=twsrc%5Etfw">September 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
-                        
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Salt Group opens UK subsidiary and appoints UK industry leader as CEO <br><br>More - <a href="https://t.co/glOfQeDK8J">https://t.co/glOfQeDK8J</a></p>&mdash; Salt Group (@saltgroup) <a href="https://twitter.com/saltgroup/status/1172422941289508868?ref_src=twsrc%5Etfw">September 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
-                    <!-- <img src="../img/TwitterFeed.png" alt=""> -->
                 </div>
                 <div class="footer-item footer-item-navigation">
                     <div class="footer-item-title"><img class="footer-item-title__img" src="../img/polygon3.png" alt="">Navigation</div>
@@ -200,9 +215,6 @@
             </footer>
         </div>
         <div class="text-desc">© 2017 SALT GROUP <img src="../img/polygon3.png" alt=""> ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</div>
-            
-        <!-- @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html") -->
         <script src="../js/main.js"></script>
     </body>
 </html>
