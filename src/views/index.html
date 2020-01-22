@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script  src = " https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js " > </script>
     </head>
     <body>
         
@@ -15,7 +17,7 @@
                 <div class="header">
                     <a href="" class="header__logo"></a>
                     <ul class="header-list">
-                        <li class="header-list__item active"><a href="#Home" class="header-list__link">Home</a></li>
+                        <li class="header-list__item active"><a href="#" class="header-list__link">Home</a></li>
                         <li class="header-list__item"><a href="#Products" class="header-list__link">Products</a></li>
                         <li class="header-list__item"><a href="#Services" class="header-list__link">Services</a></li>
                         <li class="header-list__item"><a href="#Resources" class="header-list__link">Resources</a></li>
@@ -27,7 +29,7 @@
             <div class="slider-container">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <a name="Products"></a>
+                        <a id="Products"></a>
                     <div class="swiper-slide">
                         <div class="swiper-item">
                             <div class="swiper-item__title">Device Authentication</div>
@@ -67,11 +69,11 @@
             </div>
             <div class="find">
                 <div class="find-title">Find out more</div>
-               <div class="find-img"><a href="#Resources"><img src="../img/find.png" alt=""></a></div>
+               <div class="find-img"><a href="#find"><img src="../img/find.png" alt=""></a></div>
             </div>
         </div>
         <div class="wrap">
-            <a name="Services"></a>
+            <a id="Services"></a>
             <div class="info">
                 <div class="info-item">
                     <div class="info-item__number">126,300</div>
@@ -88,7 +90,7 @@
             </div>
         </div>
         <div class="wrap wrap_gray">
-            <a name="Resources"></a>
+            <a id="Resources"></a>
             <div class="about">
                 <div class="about-title">What We Do</div>
                 <div class="about-cont">
@@ -147,7 +149,7 @@
             </div>
         </div>
         <div class="wrap wrap_product">
-            <a name="About"></a>
+            <a id="About"></a>
             <div class="product">
                 <div class="product-item">
                     <div class="product-item__title">Product Spotlight</div>
@@ -170,7 +172,7 @@
             </div>
         </div>
             <div class="start">
-                <a name="CONTACT US"></a>
+                <a id="CONTACT US"></a>
                 <div class="start-img"></div>
                 <div class="start-bg"></div>
                 <div class="start-content">
@@ -214,7 +216,7 @@
                 </div>
             </footer>
         </div>
-        <div class="text-desc">© 2017 SALT GROUP <img src="../img/polygon3.png" alt=""> ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</div>
+        <div id="find" class="text-desc">© 2017 SALT GROUP <img src="../img/polygon3.png" alt=""> ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</div>
         <script src="../js/main.js"></script>
     </body>
 </html>

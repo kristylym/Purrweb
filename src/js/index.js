@@ -7,3 +7,7 @@ let swiper = new Swiper('.swiper-container', {
       clickable: true,
     },
   });
+  var scroll = new SmoothScroll('a[href*="#"]');
+
+  
+
